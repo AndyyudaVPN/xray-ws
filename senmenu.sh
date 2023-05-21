@@ -38,7 +38,7 @@ wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/AndyyudaVPN/xray
 wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/genssl.sh"
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cf.sh"
 wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/trialssh.sh"
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/Finaleuy/bot.sh"
+wget -q -O /usr/bin/Finaleuy "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/Finaleuy/bot.sh"
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/issue.net"
 wget -q -O /root/versi "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/update.sh"
