@@ -42,7 +42,7 @@ wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/AndyyudaVPN/xray
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/issue.net"
 wget -q -O /root/versi "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/update.sh"
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu-backup.sh"
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/menu-backup.sh"
 wget https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/backup/set-br.sh
 bash set-br.sh
 chmod +x /usr/bin/menu-backup
