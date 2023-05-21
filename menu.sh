@@ -66,8 +66,8 @@ export Server_IP="underfined"
 export Script_Mode="Stable"
 export Auther=".geovpn"
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS https://raw.githubusercontent.com/Andyvpn/Autoscript-vpn/main/izin | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/Andyvpn/Autoscript-vpn/main/izin | grep $MYIP | awk '{print $3}')
+Name=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | grep $MYIP | awk '{print $2}')
+Exp=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | grep $MYIP | awk '{print $3}')
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
