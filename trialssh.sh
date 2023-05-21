@@ -55,7 +55,7 @@ cdndomain=$(cat /root/awscdndomain)
 slkey=$(cat /etc/slowdns/server.pub)
 clear
 
-echo "Script AutoCreate Akun SSH dan OpenVPN By CyberVPN"
+echo "Script AutoCreate Akun SSH dan OpenVPN By KLMPK"
 sleep 3
 echo Ping Host
 echo Cek Hak Akses...
