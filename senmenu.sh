@@ -2,7 +2,7 @@
 # // config Data
 echo -e "${GREEN}Config Data${NC}"
 
-#wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu.sh"
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Andyyudak1/Autoscript-vpn/main/menu.sh"
 wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-ws.sh"
 wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-ssws.sh"
 #wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-socks.sh"
@@ -17,7 +17,7 @@ wget -q -O /usr/bin/running "https://raw.githubusercontent.com/AndyyudaVPN/xray-
 wget -q -O /usr/bin/cek-trafik "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cek-trafik.sh"
 wget -q -O /usr/bin/cek-speed "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/speedtes_cli.py"
 wget -q -O /usr/bin/cek-bandwidth "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cek-bandwidth.sh"
-wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/ram.sh"
+wget -q -O /usr/bin/cek-ram "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/ram.sh"
 wget -q -O /usr/bin/limit-speed "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/limit-speed.sh"
 wget -q -O /usr/bin/menu-vless "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu-vless.sh"
 wget -q -O /usr/bin/menu-vmess "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu-vmess.sh"
@@ -37,7 +37,7 @@ wget -q -O /usr/bin/xp "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/ma
 wget -q -O /usr/bin/addhost  "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/addhost.sh"
 wget -q -O /usr/bin/genssl  "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/genssl.sh"
 wget -q -O /usr/bin/fix "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cf.sh"
-wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/trialssh.sh"
+#wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/update.sh"
 wget -q -O /etc/issue.net "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/issue.net"
 wget -q -O /root/versi "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/update.sh"
@@ -69,13 +69,13 @@ chmod +x /usr/bin/menu-vless
 chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
-chmod +x /usr/bin/trialssh
+#chmod +x /usr/bin/menu-socks
 chmod +x /usr/bin/menu-trojan
 #chmod +x /usr/bin/menu-trgo
 chmod +x /usr/bin/menu-ssh
 chmod +x /usr/bin/menu-bckp
 chmod +x /usr/bin/menu
-chmod +x /usr/bin/bckp
+#chmod +x /usr/bin/bckp
 chmod +x /usr/bin/wbm
 chmod +x /usr/bin/xp
 chmod +x /usr/bin/changer
