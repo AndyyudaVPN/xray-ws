@@ -7,7 +7,7 @@ COLOR1="\033[0;31m"
 ###########- END COLOR CODE -##########
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/Pakhaji30/Autoscript-vpn/main/izin > /root/tmp
+    curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -25,7 +25,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/Pakhaji30/Autoscript-vpn/main/izin | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -42,7 +42,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/Pakhaji30/Autoscript-vpn/main/izin | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
