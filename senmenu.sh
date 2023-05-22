@@ -28,7 +28,7 @@ wget -q -O /usr/bin/menu-trojan "https://raw.githubusercontent.com/AndyyudaVPN/x
 wget -q -O /usr/bin/menu-ssh "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu-ssh.sh"
 #wget -q -O /usr/bin/menu-bckp "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/menu-bckp-telegram.sh"
 wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu-backup.sh"
-#wget -q -O /usr/bin/setup "https://raw.githubusercontent.com/Azigaming404/autoscript-ssh-slowdns/main/setup.sh"
+wget -q -O /usr/bin/slowdns "https://raw.githubusercontent.com/Azigaming404/autoscript-ssh-slowdns/main/slowdns.sh"
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/usernew.sh"
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu.sh"
 wget -q -O /usr/bin/wbm "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/webmin.sh"
@@ -70,7 +70,7 @@ chmod +x /usr/bin/menu-vless
 chmod +x /usr/bin/menu-vmess
 chmod +x /usr/bin/menu-ss
 chmod +x /usr/bin/updatsc
-#chmod +x /usr/bin/setup
+chmod +x /usr/bin/slowdns
 chmod +x /usr/bin/menu-trojan
 chmod +x /usr/bin/trialssh
 chmod +x /usr/bin/menu-ssh
