@@ -38,7 +38,7 @@ echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) clear ; addl ;;
+1) clear ; add-vless ;;
 2) clear ; renel ;;
 3) clear ; dell ;;
 4) clear ; cekl ;;
