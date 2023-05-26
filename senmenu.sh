@@ -57,6 +57,9 @@ chmod +x /usr/bin/add-ssws
 chmod +x /usr/bin/add-vless
 chmod +x /usr/bin/add-tr
 chmod +x /usr/bin/addl
+chmod +x /usr/bin/cekl
+chmod +x /usr/bin/dell
+chmod +x /usr/bin/renel
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/autoreboot
 chmod +x /usr/bin/addhost
