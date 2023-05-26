@@ -43,6 +43,9 @@ wget -q -O /etc/issue.net "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws
 wget -q -O /root/versi "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/versibasic"
 wget -q -O /usr/bin/updatsc "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/update.sh"
 wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/backup.sh"
+wget -q -O /usr/bin/renel "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/renel.sh"
+wget -q -O /usr/bin/cekl "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cekl.sh"
+wget -q -O /usr/bin/dell "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/dell.sh"
 wget https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/backup/set-br.sh
 bash set-br.sh
 chmod +x /usr/bin/menu-backup
