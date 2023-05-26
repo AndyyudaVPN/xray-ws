@@ -2,7 +2,7 @@
 # // config Data
 echo -e "${GREEN}Config Data${NC}"
 
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu.sh"
+#wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/menu.sh"
 wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-ws.sh"
 wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-ssws.sh"
 #wget -q -O /usr/bin/add-socks "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/minacantik/add-socks.sh"
@@ -46,7 +46,7 @@ wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/AndyyudaVPN/xray-w
 wget https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/backup/set-br.sh
 bash set-br.sh
 chmod +x /usr/bin/menu-backup
-chmod +x /usr/bin/menu
+#chmod +x /usr/bin/menu
 chmod +x /usr/bin/add-ws
 chmod +x /usr/bin/add-ssws
 #chmod +x /usr/bin/add-socks
