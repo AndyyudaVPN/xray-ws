@@ -74,7 +74,7 @@ chmod +x /usr/bin/slowdns
 chmod +x /usr/bin/menu-trojan
 chmod +x /usr/bin/trialssh
 chmod +x /usr/bin/menu-ssh
-chmod +x /usr/bin/menu-bckp
+chmod +x /usr/bin/menu-backup
 chmod +x /usr/bin/menu
 chmod +x /usr/bin/backup
 chmod +x /usr/bin/wbm
