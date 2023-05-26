@@ -256,7 +256,7 @@ case $opt in
 18) clear ; limit-speed ;;
 19) clear ; wbm ;;
 20) clear ; cat /root/log-install.txt ;;
-21) clear ; log ;;
+21) clear ; clearlog ;;
 #99) clear ; update ;;
 22) clear ; fix ;;
 #23) clear ; slow ;;
