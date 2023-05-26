@@ -247,7 +247,7 @@ case $opt in
 10) clear ; trialssh ;;
 11) clear ; addhost ;;
 12) clear ; genssl ;;
-13) clear ; slowdns ;;
+13) clear ; nano /etc/issue.net ;;
 14) clear ; running ;;
 15) clear ; cek-trafik ;;
 16) clear ; cek-speed ;;
