@@ -46,7 +46,7 @@ wget -q -O /usr/bin/backup "https://raw.githubusercontent.com/AndyyudaVPN/xray-w
 wget -q -O /usr/bin/renel "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/renel.sh"
 wget -q -O /usr/bin/cekl "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/cekl.sh"
 wget -q -O /usr/bin/dell "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/dell.sh"
-wget -q -O /usr/bin/ns-menu "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh"
+wget -q -O /usr/bin/ns-menu "https://raw.githubusercontent.com/Azigaming404/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 wget https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/backup/set-br.sh
 bash set-br.sh
 chmod +x /usr/bin/menu-backup
