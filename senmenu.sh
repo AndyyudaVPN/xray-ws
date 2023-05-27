@@ -88,5 +88,5 @@ chmod +x /usr/bin/wbm
 chmod +x /usr/bin/xp
 chmod +x /usr/bin/changer
 chmod +x /usr/bin/fix
-chmod +x /usr/bin/ns-menu
+chmod +x /usr/bin/Finaleuy
 #chmod +x /usr/bin/update
