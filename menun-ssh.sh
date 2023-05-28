@@ -396,7 +396,7 @@ echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Del user Exp     "
 echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH    "
 echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
 echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Trial SSH"
-echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Restart All Service"
+echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Restart All Service"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ CyberVPN TUNNELING ⇲                   \E[0m"
