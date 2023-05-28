@@ -5,7 +5,6 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
-clear
 DOMAIN=klmpk.my.id
 SUB_DOMAIN=${sub}.klmpk.my.id
 CF_ID=andyyuda41@gmail.com
