@@ -243,7 +243,7 @@ case $opt in
 6) clear ; menu-backup ;;
 7) clear ; autoreboot ;;
 8) clear ; reboot ;;
-9) clear ; restart ;;
+9) clear ; restarts ;;
 10) clear ; trialssh ;;
 11) clear ; addhost ;;
 12) clear ; genssl ;;
