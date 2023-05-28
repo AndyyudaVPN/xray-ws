@@ -2,15 +2,14 @@
 # // String / Request Data
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-apt install update && apt upgrade -y
-apt install socat -y
+clear
 apt install jq curl -y
 sub=$(</dev/urandom tr -dc a-z | head -c4)
 clear
-DOMAIN=jawa.software
-SUB_DOMAIN=${sub}.jawa.software
-CF_ID=resaananta42@gmail.com
-CF_KEY=821d599ff7aeafbf73230ba3ac2f238f438f3
+DOMAIN=klmpk.my.id
+SUB_DOMAIN=${sub}.klmpk.my.id
+CF_ID=andyyuda41@gmail.com
+CF_KEY=0d626234700bad388d6d07b49c42901445d1c
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
