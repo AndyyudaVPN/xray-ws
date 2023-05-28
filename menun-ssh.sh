@@ -396,6 +396,7 @@ echo -e "     ${BICyan}[${BIWhite}6${BICyan}] Auto Del user Exp     "
 echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH    "
 echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
 echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Trial SSH"
+echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Restart All Service"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ CyberVPN TUNNELING ⇲                   \E[0m"
@@ -414,6 +415,7 @@ case $opt in
 7) clear ; autokill ;;
 8) clear ; member ;;
 9) clear ; trialssh ;;
+10) clear ; restarts ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
