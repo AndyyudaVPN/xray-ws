@@ -258,7 +258,7 @@ case $opt in
 20) clear ; cat /root/log-install.txt ;;
 21) clear ; Finaleuy ;;
 #99) clear ; update ;;
-22) clear ; domain ;;
+22) clear ; fix ;;
 #23) clear ; slow ;;
 
 0) clear ; menu ;;
