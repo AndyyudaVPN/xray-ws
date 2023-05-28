@@ -10,7 +10,7 @@ wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/AndyyudaVPN/xra
 wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-tr.sh"
 wget -q -O /usr/bin/add-trgo "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/add-trgo.sh"
 wget -q -O /usr/bin/autoreboot "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/autoreboot.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/restart.sh"
+wget -q -O /usr/bin/restarts "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/restarts.sh"
 wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/tendang.sh"
 wget -q -O /usr/bin/clearlog "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/clearlog.sh"
 wget -q -O /usr/bin/running "https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/running.sh"
@@ -64,7 +64,7 @@ chmod +x /usr/bin/usernew
 chmod +x /usr/bin/autoreboot
 chmod +x /usr/bin/addhost
 chmod +x /usr/bin/genssl
-chmod +x /usr/bin/restart
+chmod +x /usr/bin/restarts
 chmod +x /usr/bin/tendang
 chmod +x /usr/bin/clearlog
 chmod +x /usr/bin/running
