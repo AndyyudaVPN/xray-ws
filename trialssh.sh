@@ -27,7 +27,7 @@ echo "memeriksa vps anda"
 sleep 0.5
 CEKEXPIRED () {
         today=$(date -d +1day +%Y -%m -%d)
-        Exp1=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | grep $MYIP | awk '{print $3}')
+        Exp1=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/permission/main/ip | grep $MYIP | awk '{print $3}')
         if [[ $today < $Exp1 ]]; then
         echo "status script aktif.."
         else
@@ -35,7 +35,7 @@ CEKEXPIRED () {
         exit 0
 fi
 }
-IZIN=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/izin | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS https://raw.githubusercontent.com/AndyyudaVPN/permission/main/ip | awk '{print $4}' | grep $MYIP)
 if [ $MYIP = $IZIN ]; then
 echo "IZIN DI TERIMA!!"
 CEKEXPIRED
@@ -108,7 +108,6 @@ echo -e "Expired: $expi"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo -e "IP/Host: $IP"
 echo -e "Domain SSH: $domain"
-echo -e "Domain Cloudflare: $domain"
 echo -e "PubKey : $slkey"
 echo -e "Nameserver: $sldomain"
 echo -e "${LIGHT}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -121,7 +120,6 @@ echo -e "SSH Websocket HTTP: 80,8080,8880"
 echo -e "SSH Websocket Direct: 8080"
 echo -e "OPEN VPN: 1194"
 echo -e "BadVPN UDPGW: 7100,7200,7300"
-echo -e "Proxy CloudFront: [OFF]"
 echo -e "Proxy Squid: [ON]"
 echo -e "OVPN TCP: http://$IP:81/tcp.ovpn"
 echo -e "OVPN UDP: http://$IP:81/udp.ovpn"
