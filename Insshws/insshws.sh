@@ -6,8 +6,8 @@ apt install python -y
 
 #Install Script Websocket-SSH Python
 wget -O /usr/local/bin/edu-proxy https://raw.githubusercontent.com/Andyvpn/websocket/main/https.py && chmod +x /usr/local/bin/edu-proxy
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/Insshws/dropbear-ws.py.txt
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/Insshws/ws-stunnel.txt
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/Insshws/dropbear-ws.py.txt
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/Insshws/ws-stunnel.txt
 wget -O /usr/local/bin/edu-proxyovpn https://gitlab.com/hidessh/baru/-/raw/main/websocket-python/baru/ovpn.py && chmod +x /usr/local/bin/edu-proxyovpn
 
 #izin permision
