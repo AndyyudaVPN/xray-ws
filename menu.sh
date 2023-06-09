@@ -226,7 +226,7 @@ echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━�
 
 echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan}│ ${BOLD}${BLUE}Client    = $Name                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Expired   = $Exp                            ${NC}"
+echo -e "${BICyan}│ ${BOLD}${BLUE}Expired   = $exp2 day                           ${NC}"
 echo -e "${BICyan}│ ${BOLD}${BLUE}Developer = Andy Yuda                       ${NC}"
 echo -e "${BICyan}│ ${BOLD}${RED}Version   = SUPER LTS                       ${NC}"
 echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
