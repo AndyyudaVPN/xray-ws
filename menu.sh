@@ -224,12 +224,23 @@ echo -e " ${BICyan}[${BIWhite} X ${BICyan}] TYPE X FOR EXIT ${BICyan}${BIYellow}
 echo -e " ${RED}"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
-echo -e "${BICyan}┌──────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Client    = $Name                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Expired   = $exp2 day                           ${NC}"
-echo -e "${BICyan}│ ${BOLD}${BLUE}Developer = Andy Yuda                       ${NC}"
-echo -e "${BICyan}│ ${BOLD}${RED}Version   = SUPER LTS                       ${NC}"
-echo -e "${BICyan}└──────────────────────────────────────────────────┘${NC}"
+DATE=$(date +'%d %B %Y')
+datediff() {
+    d1=$(date -d "$1" +%s)
+    d2=$(date -d "$2" +%s)
+    echo -e " ${BICyan}│$NC  Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
+}
+mai="datediff "$Exp" "$DATE""
+echo -e " ${BICyan}┌─────────────────────────────────────┐${NC}"
+echo -e " ${BICyan}│  Version       : $(cat /opt/.ver) Last Update ${NC}"
+echo -e " ${BICyan}│  User          :\033[1;36m $Name \e[0m"
+if [ $exp \< 1000 ];
+then
+echo -e "   $BICyan│$NC License      : ${GREEN}$sisa_hari$NC Days Tersisa $NC"
+else
+    datediff "$Exp" "$DATE"
+fi;
+echo -e " ${BICyan}└─────────────────────────────────────┘${NC}"
 
 echo
 read -p " Select menu : " opt
