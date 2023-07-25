@@ -44,7 +44,7 @@ wget -q https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/tools.sh && c
 rm tools.sh
 clear
 # domain random
-CDN="https://raw.githubusercontent.com/wingvpn/v4/main/ssh"
+CDN="https://raw.githubusercontent.com/AndyyudaVPN/xray-ws/main/ssh"
 # izin
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "memeriksa vps anda"
