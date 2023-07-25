@@ -57,7 +57,7 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
 --data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${SUB_DOMAIN}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
 echo "Host NS : $NS_DOMAIN"
-echo "IP=$SUB_DOMAIN" > /var/lib/SIJA/ipvps.conf
+echo "IP=$SUB_DOMAIN" > /var/lib/scrz-prem/ipvps.conf
 echo "$SUB_DOMAIN" > /root/domain
 echo "$NS_DOMAIN" > /root/nsdomain
 echo "$SUB_DOMAIN" > /etc/xray/domain
