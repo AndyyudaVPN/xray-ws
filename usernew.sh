@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # ==========================================
+
+# Getting
+clear
+export CHATID="5862048483"
+export KEY="6307367714:AAG_Gae1CEjB-BDTYLzHSb89kbmLxzln7mk"
+export TIME="10"
+export URL="https://api.telegram.org/bot$KEY/sendMessage"
 # Color
 RED='\033[0;31m'
 NC='\033[0m'
@@ -69,6 +76,63 @@ echo -e "$Pass\n$Pass\n"|passwd $Login &> /dev/null
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 expi=`date -d "$masaaktif days" +"%Y-%m-%d"`
 clear
+
+cat >/var/www/html/ssh-$Login.txt <<-END
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            SSH Account            
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Username    : $Login
+Password    : $Pass
+Expired On  : $exp
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tinggal Copy: $domen:80/443@$Login:$Pass
+IP          : $IP
+Host        : $domen
+Host DNS    : $sldomain
+PUB KEY     : ${PUB}
+User Quota  : ${Quota} GB
+OpenSSH     : $opensh
+Dropbear    : $db
+SSH-WS      : $portsshws
+SSH-SSL-WS  : $wsssl
+SSH-NOSSL-WS: 8880
+SSL/TLS     : $ssl
+OpenVPN TCP : 1194
+OpenVPN UDP : 2200
+OpenVPN SSL : 110
+OHP Dropbear: 8585
+OHP OpenSSH : 8686
+OHP OpenVPN : 8787
+Prot Squid  : $sqd
+UDPGW       : 7100-7300
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔰AUTO PRINT AKUN SSH🔰
+Tinggal Copy: $domen:80@$Login:$Pass
+Tinggal Copy: $domen:443@$Login:$Pass
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔰Account OpenVPN🔰 
+OpenVPN TCP : 1194 http://$IP:81/client-tcp-1194.ovpn
+OpenVPN UDP : 2200 http://$IP:81/client-udp-2200.ovpn
+OpenVPN SSL : 110 http://$IP:81/client-tcp-ssl.ovpn
+🔰Account OpenVPN OHP🔰 
+OpenVPN OHP : 8787 http://$MYIP:81/client-tcp-ohp1194.ovpn
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔰Account UDP 1🔰 
+$domen:54-65535@$Login:$Pass
+🔰Account UDP 2🔰 
+$IP:10000-10150@$Login:$Pass
+🔰Account UDP 3🔰 
+$domen:1-65535@$Login:$Pass
+\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Payload WSS
+GET wss://isi_bug_disini/ HTTP/1.1[crlf]Host: sshws.$domain[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]
+Payload WS
+GET / HTTP/1.1[crlf]Host: sshws.$domain[crlf]Upgrade: websocket[crlf][crlf]
+PAYLOAD WS OVPN HTTP
+GET wss://isi_bug_disini/ HTTP/1.1[crlf]Host: sshws.$domain[crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END
+
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                 ⇱ INFORMASI AKUN SSH ⇲            \E[0m"
