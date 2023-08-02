@@ -35,33 +35,6 @@ ICyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
 NC='\e[0m'
 
-# COLOR VALIDATION
-clear
-RED='\033[0;31m'
-NC='\033[0m'
-gray="\e[1;30m"
-Blue="\033[36m"
-GREEN='\033[0;32m'
-grenbo="\e[92;1m"
-YELL='\033[0;33m'
-ISP=$(cat /etc/xray/isp)
-NS=$(cat /etc/xray/dns)
-CITY=$(cat /etc/xray/city)
-IPVPS=$(curl -s ipv4.icanhazip.com)
-COUNTRY=$(curl -s ipinfo.io/country)
-domain=$(cat /etc/xray/domain)
-RAM=$(free -m | awk 'NR==2 {print $2}')
-USAGERAM=$(free -m | awk 'NR==2 {print $3}')
-MEMOFREE=$(printf '%-1s' "$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')")
-LOADCPU=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
-MODEL=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
-CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
-Exp="Never Expired"
-Name="AndyYuda Tunnel"
-DATEVPS=$(date +'%d/%m/%Y')
-TIMEZONE=$(printf '%(%H:%M:%S)T')
-SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
-
 # // Export Color & Information
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -195,20 +168,16 @@ ISPVPS=$( curl -s ipinfo.io/org )
 ttoday="$(vnstat | grep today | awk '{print $8" "substr ($9, 1, 3)}' | head -1)"
 tmon="$(vnstat -m | grep `date +%G-%m` | awk '{print $8" "substr ($9, 1 ,3)}' | head -1)"
 clear
-echo -e "\033[1;93m────────────────────────────────────────────────────\033[0m"
-echo -e "\033[42m             AndyYuda TUNNEL (c) 2023            \033[0m"
-echo -e "\033[1;93m────────────────────────────────────────────────────\033[0m"
-echo -e " ${YELL}System OS${NC}     : \033[0;32m$MODEL${NC}"
-echo -e " ${YELL}RAM${NC}           : \033[0;32m$USAGERAM MB / $RAM MB ($MEMOFREE)$NC"
-echo -e " ${YELL}LoadCPU${NC}       : \033[0;32m$LOADCPU% ($CORE Core)${NC}"
-echo -e " ${YELL}Uptime Server${NC} : \033[0;32m$SERONLINE${NC}"
-echo -e " ${YELL}Date${NC}          : \033[0;32m$DATEVPS $TIMEZONE${NC}"
-echo -e " ${YELL}Isp VPS${NC}       : \033[0;32m$ISP, $CITY, $COUNTRY${NC}"
-echo -e " ${YELL}IP VPS${NC}        : \033[0;32m$IPVPS${NC}"
-echo -e " ${YELL}Domain${NC}        : \033[0;32m$domain${NC}"
-echo -e " ${YELL}NS Domain${NC}     : \033[0;32m$NS${NC}"
-echo -e " ${YELL}Exp Script${NC}    : \033[0;32m$Exp${NC}"
-echo -e " ${YELL}Name Author${NC}   : \033[0;32m$Name${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[39;1;92m                   ⇱ SCRIPT PREMIUM BY ANDY YUDA⇲             \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "${BICyan} "                                                                      
+echo -e "${BICyan} ⇲  ${BICyan}Use Core        :  ${BIYellow}Xray-core"    
+echo -e "${BICyan} ⇲  ${BICyan}Current Domain  :  ${BIYellow}$(cat /etc/xray/domain)${NC}" 
+echo -e "${BICyan} ⇲  ${BICyan}NS Domain       :  $(cat /root/nsdomain)"
+echo -e "${BICyan} ⇲  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"                  
+echo -e "${BICyan} ⇲  ${BICyan}ISP-VPS         :  ${BIYellow}$ISPVPS${NC}"
+echo -e "${BICyan} ⇲  ${BICyan}TOTAL RAM       :  ${BIYellow}${totalram}MB"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[39;1;92m STATUS HARI INI  :  ⇱ Tetap Tersenyum ⇲             \E[0m"
